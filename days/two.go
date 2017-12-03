@@ -72,6 +72,7 @@ func twoB(numbers []int, rowLength int) int {
 			for compareIndex, compareValue := range row {
 				if currentIndex != compareIndex && currentValue%compareValue == 0 {
 					sum += (currentValue / compareValue)
+					break
 				}
 			}
 		}
